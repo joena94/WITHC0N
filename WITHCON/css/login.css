@@ -1,0 +1,30 @@
+#login-container {
+    height: 50%;
+    text-align: center;
+    background-color: #E5EEF5;
+}
+
+#banner-img { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+ }
+ 
+ input {
+    display:inline-block;
+    border: 3px solid #383A39;
+    background-color:transparent;
+    height: 35px;
+    width: 300px;
+    border-radius: 13px;
+}
+
+#login-btn {
+    height: 35px;
+    width: 300px;
+    border-radius: 13px;
+    background-color: #0B1A37;
+    color: white;
+    text-align: center;
+    border: none;
+
+}

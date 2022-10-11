@@ -1,0 +1,226 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'NanumSquare';}
+
+input:not(#policy-agree, #create-team, #join-team), select {
+    display:inline-block;
+    border: 1px solid #383A39;
+    background-color:#ECEEED;
+    height: 35px;
+    width: 310px;
+    padding: 5px;
+    margin-left: 10px;
+}
+input[text]{
+  font-size: 10px;
+  font-weight: 100;
+}
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+}
+input[type="password"]{
+  font-family: "default";
+}
+label {
+    display: block;
+    position: relative;
+    top: -6px;
+    text-align: right;
+}
+
+#banner-img {
+    position: relative;
+    width: 100%; /* for IE 6 */
+ }
+
+ /* 공통부분 */
+#box-color{
+  width: 100%;
+  background-color: #ECEEED;
+}
+#box-size{
+  width: 920px;
+  margin: 0 auto;
+}
+.required{
+  color: rgb(215, 64, 70);
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 2px;
+}
+
+/* 이용약관 */
+#register-form{
+  padding: 50px 0;
+}
+#register-form #policy-agree{
+}
+#register-form #policy-text{
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border: 3px solid #DBDBDB;
+  overflow: auto;
+  padding: 10px;
+}
+
+/* 양쪽 균등분할 적용 */
+.register-size{
+  display: flex;
+  justify-content: space-between;
+}
+
+#box-size .mask3, #box-size .mask4{
+  width: 50%;
+  height: 450px;
+}
+
+/* 왼쪽 */
+.req_notice{
+  font-size: 15px;
+  color: rgb(215, 64, 70);
+}
+.mask3 .input-form {
+  height: 40px;
+  width: 450px;
+  margin: 40px auto;
+  text-align: right;
+}
+.mask .resize_track{
+  margin: 23px auto 40px auto;
+}
+#track-form {
+    width: 31-0px;
+    margin-left: 5px;
+}
+#track-form option {
+    width: 260px;
+}
+.mask3 .input-form #user-id{
+  width: 230px;
+}
+
+/* 오른쪽 */
+.mask4 .input-form {
+  height: 80px;
+  width: 450px;
+  margin: 40px auto;
+  text-align: right;
+}
+.mask4 .mask6 .input-form {
+  width: 380px;
+  margin: 0 auto;
+  text-align: right;
+}
+/* 토글 시작 */
+.mask6 .on-off{
+  text-align: right;
+  width: 380px;
+  margin:12px auto 5px auto;
+}
+.mask6 .on-off input[type=radio] {
+  display: none;
+}
+.mask6 .on-off label{
+  cursor: pointer;
+  position: relative;
+  right: 0;
+  display: inline-block;
+  line-height: 1em;
+  font-size: 20px;
+}
+.mask6 .on-off .join-team{
+  padding-right: 55px;
+}
+.mask6 .on-off label::before {
+  content: "";
+  width: 40px;
+  height: 20px;
+  background: white;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  border: 1px solid #666;
+  border-radius: 1em;
+  box-shadow: 0 0 0 0.05em #bdc3c7;
+}
+.mask6 .on-off label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 4px;
+  background: dodgerblue;
+  border-radius: 100%;
+  z-index: 1;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+  transition: 300ms all;
+}
+.mask6 .on-off label:last-of-type:before {
+  display: none;
+}
+.mask6 .on-off label:last-of-type:after {
+  background: none;
+  left: -2em;
+  width: 10px;
+}
+.mask6 .on-off input:first-child:checked + label::after {
+  right: 33px;
+  margin-right: -0.5em;
+  background-color: rgb(215, 64, 70);
+}
+/* 토글 끝 */
+.mask6 .double-input{
+  height: 165px;
+}
+.mask6 .double-input p{
+  font-size: 12px;
+  margin-top: -8px;
+  color: rgb(215, 64, 70);
+}
+.mask6 #team-validation{
+  width:60px;
+  position: relative;
+  top: -2px;
+}
+.mask6 #team-pw{
+  width: 246px;
+}
+.mask6 .team_pw{
+  margin-top: 25px;
+}
+.mask6 .input-form #user-email{
+  width: 216px;
+}
+
+/* 회원가입 버튼 */
+.mask5{
+  text-align: center;
+}
+ #register-form {
+     background-color: #ECEEED;
+ }
+
+
+#id-validation, #team-validation, #submit-form, #email-validation{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border: 1px solid black;
+    position: relative;
+    top: -6px;
+
+}
+
+#email-validation {
+    margin-top: 6px;
+}
+
+#submit-form {
+    margin-top: 40px;
+}

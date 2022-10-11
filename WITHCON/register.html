@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WHITEHAT2021</title>
+    <link rel="stylesheet" type="text/css" href="css/header_.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 아이콘 소스 -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <style>
+        .light-font {
+            font-weight: 300;
+        }
+
+        .bold-font {
+            font-weight: 700;
+        }
+
+        /* .mask6 {
+            height: 100%;
+            width: 57.7%;
+            display: inline-block;
+            text-align: right;
+        } */
+    </style>
+
+    <head>
+
+    <body>
+        <?php include('header.html') ?>
+        <div id='banner-container'>
+            <img id="banner-img" src="assets/img/top.png" alt="" />
+        </div>
+<!-- articel 시작 -->
+  <!-- 이용약관 -->
+        <div id="box-color">
+          <article id="box-size">
+            <div id="register-form" class="mask mask1">
+              <input id="policy-agree" type="checkbox" name="policy-agree" value="Y">
+              <label for="policy-agree">화이트햇 이용약관 동의 (필수)</label>
+              <div id="policy-text">
+                  개인정보 수집 · 이용 · 제공 동의서<br><br>
+                  화이트햇 콘테스트 운영 목적의 개인정보 수집 · 이용을 위하여 개인정보 보호법 제 15조(개인정보의 수집 · 이용), 제 17조(개인정보의 제공)에 따라 귀하의 동의를 얻고자 합니다.<br><br>
+                  개인의 자유로운 의사에 따라 동의를 거부할 수 있으며, 이 경우 화이트햇 콘테스트 참여 제한 등 불이익이 있을 수 있습니다.<br><br>
+                  1. 개인정보 수집 · 이용목적<br>
+                  - 화이트햇 콘테스트 운영 및 참여자 관리, 확인서 발급 등 사후관리
+                  <br><br>
+                  2. 수집하고자 하는 개인정보의 항목<br>
+                  - 팀명, 성명, 소속, 연락처, 이메일, 생년월일 등 회원 정보<br>
+                  - IP 주소, 대회 참여 영상, 서비스 이용 기록
+                  <br><br>
+                  3. 개인정보 보유 및 이용 기간 : 6개월 / 3년<br>
+                  - 단, 본선 진출자는 확인서 발급 등 사후관리 목적으로 3년
+              </div>
+            </div>
+          </article>
+        <article id="box-size" class="register-size">
+          <!-- 왼쪽 -->
+          <div class="mask mask3">
+            <div class="req_notice">
+              <p><span class="required">*</span> 은 필수항목입니다.</p>
+            </div>
+            <div class="input-form resize_track">
+                <label class="bold-font"><span class="required">*</span>트랙선택
+                    <select name="user-track" id="track-form">
+                        <option value="" hidden>트랙을 선택하세요</option>
+                        <option value="J">청소년부</option>
+                        <option value="G">일반부</option>
+                    </select>
+                </label>
+            </div>
+            <div class="input-form">
+                <label class="bold-font"><span class="required">*</span>아이디<input id="user-id" name="user-id" size="27" type="text" required ></label>
+                <button style="width:75px;" id="id-validation" class="bold-font">중복확인</button>
+            </div>
+            <div class="input-form">
+                <label class="bold-font"><span class="required">*</span>비밀번호<input id="user-pw" name="user-pw" size="27" type="password" minlength="8" required></label>
+            </div>
+            <div class="input-form">
+                <label class="bold-font"><span class="required">*</span>비밀번호 확인<input id="user-pw-chk" name="user-pw-chk" size="27" type="password" required ></label>
+            </div>
+          </div>
+          <!-- 오른쪽 -->
+          <div class="mask mask4">
+              <div class="mask mask6">
+                  <div class="on-off radio-switch">
+                      <input type="radio" id="join-team" name="team_yn" checked>
+                      <label for="join-team" class="join-team">팀 참가</label>
+                      <input type="radio" id="create-team" name="team_yn" >
+                      <label for="create-team">팀 생성</label>
+                  </div>
+                  <div class="input-form double-input">
+                      <label class="bold-font"><span class="required">*</span>팀 명<input id="team-id" name="team-id" size="27" maxlength="20" type="text" required placeholder="특수문자 제외"></label>
+                      <p>미풍 양속을 해치는 팀 이름은 제재 및 변경 요청을 할 수 있습니다</p>
+                      <label class="bold-font team_pw"><span class="required">*</span>팀 암호<input id="team-pw" name="team-pw" size="27" type="password" required>
+                        <button id="team-validation" class="bold-font">팀 참가</button>
+                      </label>
+                  </div>
+                  <div class="input-form">
+                      <label class="bold-font"><span class="required">*</span>성 명<input id="user-name" name="user-name" size="27" type="text" required></label>
+                  </div>
+                  <div class="input-form">
+                      <label class="bold-font"><span class="required">*</span>연락처<input id="user-ph" name="user-ph" size="27" maxlength="13" type="text" required pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"></label>
+                  </div>
+                  <div class="input-form">
+                      <label class="bold-font"><span class="required">*</span>E-mail<input id="user-email" name="user-email" size="27" type="text" required></label>
+                      <button style="width:90px" id="email-validation" class="bold-font">인증번호 받기</button>
+                      <input id="user-email-chk" name="user-email-chk" size="35" type="text" placeholder="인증번호 입력" required>
+                  </div>
+
+              </div>
+          </div>
+        </article>
+        <div class="mask mask5">
+            <button style="width:150px" id="submit-form" class="bold-font">회원가입</button>
+        </div>
+        <!-- footer 시작 -->
+        <footer>
+            <?php include('footer.html');   ?>
+        </footer>
+        <script type="text/javascript" src="js/register.js"></script>
+    </body>
+
+</html>

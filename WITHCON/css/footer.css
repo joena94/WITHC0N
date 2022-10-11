@@ -1,0 +1,29 @@
+#foot-container {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(43,55,75,1) 68%);
+    height: 200px;
+    width: 100%;
+    color:white;
+}
+
+#footer-left {
+    display: inline-block;
+    height: 200px;
+    width: 50%;
+    text-align: center;
+}
+
+#footer-right {
+    height: 200px;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#footer-left-txt, #footer-right-txt {
+    font-size: large;
+    margin-top: 80px;
+}
+
+#footer-right-txt {
+}
